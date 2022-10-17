@@ -33,6 +33,10 @@ public class TabelPembeliJpaController implements Serializable {
         return emf.createEntityManager();
     }
 
+    public TabelPembeliJpaController() {
+    }
+    
+
     public void create(TabelPembeli tabelPembeli) throws PreexistingEntityException, Exception {
         EntityManager em = null;
         try {
