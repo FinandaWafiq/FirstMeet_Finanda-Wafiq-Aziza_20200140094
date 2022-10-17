@@ -33,6 +33,10 @@ public class TabelBarangJpaController implements Serializable {
         return emf.createEntityManager();
     }
 
+    public TabelBarangJpaController() {
+    }
+    
+
     public void create(TabelBarang tabelBarang) throws IllegalOrphanException, PreexistingEntityException, Exception {
         List<String> illegalOrphanMessages = null;
         TabelTransaksi tabelTransaksiOrphanCheck = tabelBarang.getTabelTransaksi();
