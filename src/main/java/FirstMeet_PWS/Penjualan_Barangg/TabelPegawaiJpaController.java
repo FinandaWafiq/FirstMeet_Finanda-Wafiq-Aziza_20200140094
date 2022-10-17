@@ -33,6 +33,10 @@ public class TabelPegawaiJpaController implements Serializable {
         return emf.createEntityManager();
     }
 
+    public TabelPegawaiJpaController() {
+    }
+    
+
     public void create(TabelPegawai tabelPegawai) throws IllegalOrphanException, PreexistingEntityException, Exception {
         List<String> illegalOrphanMessages = null;
         TabelPengelolaanData tabelPengelolaanDataOrphanCheck = tabelPegawai.getTabelPengelolaanData();
