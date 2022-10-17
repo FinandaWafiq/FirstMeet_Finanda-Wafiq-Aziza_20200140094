@@ -33,6 +33,10 @@ public class TabelPengelolaanDataJpaController implements Serializable {
         return emf.createEntityManager();
     }
 
+    public TabelPengelolaanDataJpaController() {
+    }
+    
+
     public void create(TabelPengelolaanData tabelPengelolaanData) throws PreexistingEntityException, Exception {
         EntityManager em = null;
         try {
